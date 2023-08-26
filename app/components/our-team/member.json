@@ -1,0 +1,92 @@
+[
+    {
+        "serial": 1,
+        "isChair": true,
+        "team": "CHAIRPERSON",
+        "image": "/our-team/daniel-ejalonibu.png",
+        "fullName": "Daniel Ejalonibu",
+        "title": "",
+        "color": "blue"
+    },
+    {
+        "serial": 2,
+        "isChair": true,
+        "team": "DEPUTY CHAIRPERSON",
+        "image": "/our-team/ifihan-oluseye.png",
+        "fullName": "Ifihan Olusheye",
+        "title": "",
+        "color": "yellow"
+    },
+    {
+        "serial": 3,
+        "isChair": false,
+        "team": "Quality Control Team",
+        "image": "/our-team/farook-ajose.png",
+        "fullName": "Farook Ajose",
+        "title": "Team lead",
+        "color": "red"
+    },
+    {
+        "serial": 4,
+        "isChair": false,
+        "team": "Training Team",
+        "image": "/our-team/fortune-adekogbe.png",
+        "fullName": "Fortune Adekogbe",
+        "title": "Team lead",
+        "color": "blue"
+    },
+    {
+        "serial": 5,
+        "isChair": false,
+        "team": "Logistics Team",
+        "image": "/our-team/raji-mustapha.png",
+        "fullName": "Raji Mustapha",
+        "title": "Team lead",
+        "color": "yellow"
+    },
+    {
+        "serial": 6,
+        "isChair": false,
+        "team": "Sponsorships & Partnerships Team",
+        "image": "/our-team/michelle-yakubu.png",
+        "fullName": "Michelle Yakubu",
+        "title": "Team lead",
+        "color": "red"
+    },
+    {
+        "serial": 7,
+        "isChair": false,
+        "team": "Content Team",
+        "image": "/our-team/olayinka-atobiloye.png",
+        "fullName": "Olayinka Atobiloye",
+        "title": "Team lead",
+        "color": "blue"
+    },
+    {
+        "serial": 8,
+        "isChair": false,
+        "team": "Design Team",
+        "image": "/our-team/demilade-adekunle.png",
+        "fullName": "Demilade Adekunle",
+        "title": "Team lead",
+        "color": "yellow"
+    },
+    {
+        "serial": 9,
+        "isChair": false,
+        "team": "Social Media & Publicity Team",
+        "image": "/our-team/samson-james.png",
+        "fullName": "Samson James",
+        "title": "Team lead",
+        "color": "red"
+    },
+    {
+        "serial": 10,
+        "isChair": false,
+        "team": "The design team",
+        "image": "/our-team/kodi-ezike.png",
+        "fullName": "Kodi Ezike",
+        "title": "Team lead",
+        "color": "blue"
+    }
+]
