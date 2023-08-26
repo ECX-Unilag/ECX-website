@@ -1,0 +1,109 @@
+.team {
+    width: 100%;
+    background: var(--bg-alice-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+    padding: 128px min(8.33%, 120px);
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.header h2 {
+    text-align: center;
+    color: #3E3934;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 100%;
+}
+.header p {
+    max-width: 669px;
+    width: 100%;
+    text-align: center;
+    color: var(--greys-006);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+}
+.members,
+.members > div {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 56px;
+}
+.members > div {
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 56px calc((20 / 1440) * 100%);
+}
+.ctaBtn {
+    max-width: 222px;
+    width: 100%;
+    padding: 18px 32px;
+    background: var(--ecx-colours-dark-blue);
+    color: var(--white-900);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+@media screen and (max-width: 1226px) {
+    .team {
+      padding: 128px max(24px, 7%);
+    }
+}
+@media screen and (max-width: 1175px) {
+    .team {
+      padding: 128px max(24px, 6%);
+    }
+}
+@media screen and (max-width: 980px) {
+    .team {
+      padding: 128px max(24px, 6%);
+    }
+}
+@media screen and (max-width: 500px) {
+    .team {
+        width: 100%;
+        background: var(--bg-alice-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 128px min(8.33%, 120px);
+    }
+    .team {
+      padding: 68px max(24px, 6%) 94px;
+    }
+    .header {
+        gap: 12px;
+    }
+    .header h2 {
+        font-size: 27px;
+    }
+    .header p {
+        font-size: 15px;
+    }
+    .members,
+    .members > div {
+        gap: 28px;
+    }
+    .members > div {
+        gap: 28px 12.1px;
+    }
+    .ctaBtn {
+        margin-top: 59px;
+    }
+}
