@@ -48,7 +48,7 @@ const PrivacyPolicyPage = () => {
 					preference or login information.
 				</li>
 				<li>
-					<b>Company:</b> when this policy mentions “Company,” “we,” “us,” or
+					<b>Company:</b> when this policy mentions “Company,” “we,” “us, or
 					“our,” it refers to Engineering Career Expo, Faculty of Engineering,
 					University of Lagos that is responsible for your information under
 					this Privacy Policy. Country: where Engineering Career Expo or the
