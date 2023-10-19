@@ -39,7 +39,7 @@ const Footer = () => {
                         <dl>
                             <dt>Help and Support</dt>
                             <dd><Link href="#">FAQs</Link></dd>
-                            <dd><Link href="/privacy-policy">Privacy Policy</Link></dd>
+                            <dd><Link href="/Privacy-Policy">Privacy Policy</Link></dd>
                         </dl>
                     </div>
                     <div className={FooterStyles.mb}>
