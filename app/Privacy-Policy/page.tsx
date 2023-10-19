@@ -1,16 +1,23 @@
-import { Nunito } from "next/font/google";
+import { Nunito, Varela_Round,  } from "next/font/google";
+import styles from '../components/css/privacypolicy.module.css'
 
+// const nunito = Nunito({
+// 	weight: "400",
+// 	subsets: ["latin"],
+// 	display: "swap",
+// 	adjustFontFallback: false,
+// });
 
-const nunito = Nunito({
-	weight: "400",
-	subsets: ["latin"],
-	display: "swap",
-	adjustFontFallback: false,
-});
+const varela_round = Varela_Round({
+		weight: "400",
+		subsets: ["latin"],
+		display: "swap",
+		variable: '--font-varela'
+})
 
 const PrivacyPolicyPage = () => {
 	return (
-		<main>
+		<main className={`${styles.main} ${varela_round.variable}`}>
 			<h2>Privacy Policy</h2>
 		<p>
 			Engineering Career Expo ("we," "our," or "us") is committed to

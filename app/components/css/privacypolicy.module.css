@@ -1,0 +1,37 @@
+.main{
+ padding-left: 0.5rem;
+ padding-right: 1rem;
+ padding-bottom: 1rem;
+ padding-top: 0.2rem;
+}
+.main h3{
+ color: var(--ecx-colours-blue);
+ margin-top: 2rem;
+ font-size: 1.5rem;
+ font-family: var(--font-varela);
+}
+.main h2{
+ font-size: 1.8rem;
+ color: var(--ecx-colours-blue);
+ font-family: var(--font-varela);
+}
+.main p{
+ margin-top: 0.5rem;
+ font-size: 1rem;
+ line-height: 1.7;
+}
+.main ul {
+ margin-top: 1rem;
+ margin-left: 2rem;
+ margin-right: 2rem;
+}
+.main li{
+ line-height: 1.5;
+ margin-bottom: 0.5rem;
+}
+.main li::before{
+ content: '\2022';
+ color: #000;
+ font-size: 16px;
+ margin-right: .5rem;
+}
