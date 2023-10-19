@@ -35,13 +35,9 @@ const Footer = () => {
                             <dt>Help and Support</dt>
                             <dd><Link href="#">FAQs</Link></dd>
                             <dd><Link href="#contact">Contact us</Link></dd>
-                        </dl>
-                        <dl>
-                            <dt>Help and Support</dt>
-                            <dd><Link href="#">FAQs</Link></dd>
                             <dd><Link href="/Privacy-Policy">Privacy Policy</Link></dd>
                         </dl>
-                    </div>
+                     </div>
                     <div className={FooterStyles.mb}>
                             <Link href="#about">About ECX</Link>
                             <Link href="#team">Our team</Link>
@@ -50,6 +46,7 @@ const Footer = () => {
                             <Link href="#">Join our community</Link>
                             <Link href="#">FAQs</Link>
                             <Link href="#contact">Contact us</Link>
+                            <Link href="/Privacy-Policy">Privacy Policy</Link>
                     </div>
                     <div className={FooterStyles.mb}>
                         
