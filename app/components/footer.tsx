@@ -36,6 +36,11 @@ const Footer = () => {
                             <dd><Link href="#">FAQs</Link></dd>
                             <dd><Link href="#contact">Contact us</Link></dd>
                         </dl>
+                        <dl>
+                            <dt>Help and Support</dt>
+                            <dd><Link href="#">FAQs</Link></dd>
+                            <dd><Link href="/privacy-policy">Privacy Policy</Link></dd>
+                        </dl>
                     </div>
                     <div className={FooterStyles.mb}>
                             <Link href="#about">About ECX</Link>
