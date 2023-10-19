@@ -1,4 +1,5 @@
 import { Nunito } from "next/font/google";
+import styles from './policy.module.css'
 
 const nunito = Nunito({
 	weight: "400",
@@ -11,25 +12,29 @@ const PrivacyPolicyPage = () => {
 	return (
 		<main>
 			<h2>Privacy Policy</h2>
-
-			<p>
-				Engineering Career Expo ("we," "our," or "us") is committed to
-				protecting your privacy. This Privacy Policy explains how your personal
-				information is collected, used, and disclosed by Engineering Career
-				Expo.
-			</p>
-
-			<p>
-				This Privacy Policy applies to our website, engcareerexpo.com , and its
-				associated subdomains (collectively, our "Service"). By accessing or
-				using our Service, you signify that you have read, understood, and agree
-				to our collection, storage, use, and disclosure of your personal
-				information as described in this Privacy Policy and our Terms of
-				Service.
-			</p>
+		<p>
+			Engineering Career Expo ("we," "our," or "us") is committed to
+			protecting your privacy. This Privacy Policy explains how your personal
+			information is collected, used, and disclosed by Engineering Career
+			Expo.
+		</p>
+		<p>
+			This Privacy Policy applies to our website, engcareerexpo.com , and its
+			associated subdomains (collectively, our "Service"). By accessing or
+			using our Service, you signify that you have read, understood, and agree
+			to our collection, storage, use, and disclosure of your personal
+			information as described in this Privacy Policy and our Terms of
+			Service.
+		</p>
+		<h3>Privacy Principles</h3>
+			<p>We follow the following principles in order to protect your privacy:</p>
+			<ul>
+				<li>We only use your personal data for the purposes we specify in this Privacy Notice, unless you agree otherwise;</li>
+				<li>We do not keep your personal data if it is no longer needed; and</li>
+				<li>Other than as we specify in this Privacy Notice, we do not share your personal data with third partie</li>
+			</ul>
 
 			<h3>Definitions and key terms</h3>
-
 			<p>
 				To help explain things as clearly as possible in this Privacy Policy,
 				every time any of these terms are referenced, are strictly defined as:
@@ -93,7 +98,7 @@ const PrivacyPolicyPage = () => {
 					via this URL: engcareerexpo.com.
 				</li>
 				<li>
-					<b>You:</b> a person or e
+					<b>You:</b> a person or entity that is registered with Engineering Career Expo to use the Services
 				</li>
 			</ul>
 
@@ -110,6 +115,34 @@ const PrivacyPolicyPage = () => {
 				<li>Email Addresses</li>
 			</ul>
 
+				<h3>Recipients of Personal Data</h3>
+				<p>We do not rent or sell your personal data to third parties, and will disclose it only in the following ways:</p>
+				<ul>
+					<li>To our third party service providers, as reasonably necessary for the uses described in this Privacy Notice. We ask our service providers to limit their use of personal data, and require them to agree to protect your personal data under written agreements;</li>
+					<li>To our third party service providers, as reasonably necessary for the uses described in this Privacy Notice. We ask our service providers to limit their use of personal data, and require them to agree to protect your personal data under written agreements;</li>
+					<li>To other organisations with which we run joint programs;</li>
+					<li>With any potential acquirer, successor or assignee as part of a reorganisation, merger, sale, joint venture, assignment, transfer or other disposition of all or any portion of our business or assets;</li>
+					<li>As required or permitted by applicable law, if we believe that such disclosure is (a) reasonably necessary to comply with legal process and law enforcement instructions and orders, such as a search warrant, subpoena, statute, judicial proceeding, or other legal process served on us, (b) helpful to prevent, investigate, or identify possible wrongdoing in connection with our Services, (c) helpful to protect our rights, reputation, property, or that of our students, visitors, users, corporate affiliates, or the public, or (d) to enforce compliance with our agreements with you; and
+					</li>
+					<li>As otherwise authorised by you.</li>
+				</ul>
+				<h3>Personal Data Obtained from Third Partie</h3>
+				<p>We may obtain certain Personal Data about you from third party sources, which we may use for the purposes and in the ways described in “Collection of Information” and “Purposes for Processing Personal Data” above. In some cases, we may obtain your consent for additional uses.
+			</p>
+			<p>
+			Single Sign-On: Some of our online services or research activities may allow you to register and login to those services through a third-party platform. When you login to our service through a third-party platform, you allow us to access and collect any personal data from your third-party platform account permitted under the settings and privacy statement of that platform.
+			</p>
+			<p>
+			Supplemental Personal Data: We may receive additional personal data from third-party sources, such as public or private databases (for example, compilations of email or postal addresses), or companies or institutions that may sponsor or facilitate your participation in one of our programs, which we may also append to existing personal data.
+			</p>
+			<h3>Cookies</h3>
+			<p>We use cookies in connection with your use of the Sites. A cookie is a small data file that is placed on your device when you visit a website. Cookies are widely used in order to make websites work or to work more efficiently, as well as to provide reporting information. A cookie may have unique identifiers and reside, among other places, on your device, in emails we send to you, and on the Site Some cookies are necessary for the website to function properly. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging-in, or filling-in forms. You can set your browser to block or alert you about these cookies, but some parts of the site may not work if you block these cookies</p>
+			<p>Our website also uses cookies during your on-line session for certain legitimate business interests, which may include delivering content specific to your interests, collecting the domain name of the server from which you are visiting, and providing us with information about the site’s performance. Our cookies enable us to relate your use of the site to information that you have specifically and knowingly provided to our website. If you do not allow these cookies, the site may be less user-friendly.</p>
+			<h3>Security</h3>
+			<p>The security of your personal data is important to us. We have adopted generally accepted industry standards in connection with our data collection, storage, and processing practices and security measures to protect against unauthorized access, alteration, disclosure, or destruction of your personal data, username, password, transaction information, and data stored on the Sites. No method of transmission over the Internet, or method of electronic storage, is 100% secure, however. Therefore, while we strive to use commercially acceptable means to protect your personal data, we cannot guarantee its absolute security.</p>
+			<h3>Data Retention</h3>
+			<p>We will retain your personal data only for so long as is necessary for the purpose for which it was collected, or as otherwise required or permitted by law. This is also the case for anyone that we share your information with and who carries out services on our behalf. When we no longer need to use your information and there is no need for us to keep it to comply with our legal or regulatory obligations, we'll either remove it from our systems or depersonalise it so that we can't identify you.
+</p>
 			<h3>How Do We Use The Information We Collect?</h3>
 			<p>
 				Any of the information we collect from you may be used in one of the
@@ -160,31 +193,11 @@ const PrivacyPolicyPage = () => {
 			</p>
 			<h3>Could my information be transferred to other countries?</h3>
 			<p>
-				We are primarily incorporated in Nigeria and we won’t be transferring
-				your information to other countries. We are incorporated in Nigeria.
-				Information collected via our website, through direct interactions with
-				you, or from use of our help services may be transferred from time to
-				time to our offices or personnel, or to third parties, located
-				throughout the world, and may be viewed and hosted anywhere in the
-				world, including countries that may not have laws of general
-				applicability regulating the use and transfer of such data. To the
-				fullest extent allowed by applicable law, by using any of the above, you
-				voluntarily consent to the trans- border transfer and hosting of such
-				information.
+					We are primarily incorporated in Nigeria and we won’t be transferring your personal information to other countries.
 			</p>
 			<h3>Is the information collected through our service secure?</h3>
 			<p>
-				We take precautions to protect the security of your information. We have
-				physical, electronic, and managerial procedures to help safeguard,
-				prevent unauthorized access, maintain data security, and correctly use
-				your information. However, neither people nor security systems are
-				foolproof, including encryption systems. In addition, people can commit
-				intentional crimes, make mistakes or fail to follow policies. Therefore,
-				while we use reasonable efforts to protect your personal information, we
-				cannot guarantee its absolute security. If applicable law imposes any
-				non-disclaimable duty to protect your personal information, you agree
-				that intentional misconduct will be the standards used to measure our
-				compliance with that duty.
+			We take precautions to protect the security of your information. We have physical, electronic, and managerial procedures to help safeguard, prevent unauthorised access, maintain data security, and correctly use your information. However, neither people nor security systems are foolproof, including encryption systems. In addition, people can commit intentional crimes, make mistakes or fail to follow policies. Therefore, while we use reasonable efforts to protect your personal information, we cannot guarantee its absolute security. If applicable law imposes any non-disclaimable duty to protect your personal information, you agree that intentional misconduct will be the standards used to measure our compliance with that duty.
 			</p>
 			<h3>Can I update or correct my information?</h3>
 			<p>
@@ -219,7 +232,7 @@ const PrivacyPolicyPage = () => {
 				about you, you may do so by contacting the organisation of which you are
 				a customer.
 			</p>
-			<h3>Personnel</h3>
+			<h3>Affiliates</h3>
 			<p>
 				If you are one of our workers or applicants, we collect information you
 				voluntarily provide to us. We use the information collected for Human
@@ -246,16 +259,9 @@ const PrivacyPolicyPage = () => {
 			</p>
 			<h3>Affiliates</h3>
 			<p>
-				We may disclose information (including personal information) about you
-				to our Corporate Affiliates. For purposes of this Privacy Policy,
-				"Corporate Affiliate" means any person or entity which directly or
-				indirectly controls, is controlled by or is under common control with
-				us, whether by ownership or otherwise. Any information relating to you
-				that we provide to our Corporate Affiliates will be treated by those
-				Corporate Affiliates in accordance with the terms of this Privacy
-				Policy.
+			We may disclose information (including personal information) about you to our Corporate Affiliates. For purposes of this Privacy Policy, "Corporate Affiliate" means any person or entity which directly or indirectly controls, is controlled by or is under common control with us, whether by ownership or otherwise. Any information relating to you that we provide to our Corporate Affiliates will be treated by those Corporate Affiliates in accordance with the terms of this Privacy Policy.
 			</p>
-			<h3>How Long Do We Keep Your Information?</h3>
+			<h3>How Do We Protect Your Information?</h3>
 			<p>
 				We keep your information only so long as we need it to provide service
 				to you and fulfil the purposes described in this policy. This is also
@@ -281,6 +287,7 @@ const PrivacyPolicyPage = () => {
 				the Service may not be accessed, disclosed, altered, or destroyed by a
 				breach of any of our physical, technical, or managerial safeguards.
 			</p>
+			
 			<h3>Governing Law</h3>
 			<p>
 				The laws of Nigeria, excluding its conflicts of law rules, shall govern
@@ -292,9 +299,9 @@ const PrivacyPolicyPage = () => {
 				By using our service, registering an account, or making a purchase, you
 				consent to this Privacy Policy.
 			</p>
-			<h3>Links to Other Websites</h3>
+			<h3>Changes To Our Privacy Policy</h3>
 			<p>
-				This Privacy Policy applies only to the Services. The Services may
+			If we decide to change our privacy policy, we will post those changes on this page, and/or update the Privacy Policy modification date below.	This Privacy Policy applies only to the Services. The Services may
 				contain links to other websites not operated or controlled by us. We are
 				not responsible for the content, accuracy or opinions expressed in such
 				websites, and such websites are not investigated, monitored or checked
@@ -304,25 +311,6 @@ const PrivacyPolicyPage = () => {
 				including those that have a link on our platform, is subject to that
 				website’s own rules and policies. Such third parties may use their own
 				cookies or other methods to collect information about you.
-			</p>
-			<h3>Cookies</h3>
-			<p>
-				We use "Cookies" to identify the areas of our website that you have
-				visited. A Cookie is a small piece of data stored on your computer or
-				mobile device by your web browser. We use Cookies to personalise the
-				Content that you see on our website. Most web browsers can be set to
-				disable the use of Cookies. However, if you disable Cookies, you may not
-				be able to access functionality on our website correctly or at all. We
-				never place Personally Identifiable Information in Cookies.
-			</p>
-			<h3>Kids' Privacy</h3>
-			<p>
-				We collect information from kids under the age of 13 just to better our
-				services. If You are a parent or guardian and You are aware that Your
-				child has provided Us with Personal Data without your permission, please
-				contact Us. If We become aware that We have collected Personal Data from
-				anyone under the age of 13 without verification of parental consent, We
-				take steps to remove that information from our servers.
 			</p>
 			<h3>Changes To Our Privacy Policy</h3>
 			<p>
@@ -344,68 +332,10 @@ const PrivacyPolicyPage = () => {
 				entirely at your own risk and subject to such third parties' terms and
 				conditions.
 			</p>
-			<h3>Information about General Data Protection Regulation (GDPR)</h3>
-			<p>
-				We may be collecting and using information from you if you are from the
-				European Economic Area (EEA), and in this section of our Privacy Policy
-				we are going to explain exactly how and why is this data collected, and
-				how we maintain this data under protection from being replicated or used
-				in the wrong way.
-			</p>
-			<h3>What is GDPR?</h3>
-			<p>
-				GDPR is an EU-wide privacy and data protection law that regulates how EU
-				residents' data is protected by companies and enhances the control the
-				EU residents have, over their personal data.
-			</p>
-			<h3>What is personal data?</h3>
-			<p>
-				Any data that relates to an identifiable or identified individual. GDPR
-				covers a broad spectrum of information that could be used on its own, or
-				in combination with other pieces of information, to identify a person.
-				Personal data extends beyond a person’s name or email address. Some
-				examples include financial information, political opinions, genetic
-				data, biometric data, IP addresses, physical address, sexual
-				orientation, and ethnicity. The Data Protection Principles include
-				requirements such as:
-			</p>
-			<ul>
-				<li>
-					Personal data collected must be processed in a fair, legal, and
-					transparent way and should only be used in a way that a person would
-					reasonably expect.
-				</li>
-				<li>
-					Personal data should only be collected to fulfil a specific purpose
-					and it should only be used for that purpose. Organisations must
-					specify why they need the personal data when they collect it.
-				</li>
-				<li>
-					Personal data should be held no longer than necessary to fulfil its
-					purpose.
-				</li>
-				<li>
-					People covered by the GDPR have the right to access their own personal
-					data. They can also request a copy of their data, and that their data
-					be updated, deleted, restricted, or moved to another organisation.
-				</li>
-			</ul>
-
-			<h3>Why is GDPR important?</h3>
-			<p>
-				GDPR adds some new requirements regarding how companies should protect
-				individuals' personal data that they collect and process. It also raises
-				the stakes for compliance by increasing enforcement and imposing greater
-				fines for breach. Beyond these facts it's simply the right thing to do.
-				At Help Scout we strongly believe that your data privacy is very
-				important and we already have solid security and privacy practices in
-				place that go beyond the requirements of this new regulation.
-			</p>
-			<h3>
-				Individual Data Subject's Rights - Data Access, Portability and Deletion
-			</h3>
+			<h3>Contact Us</h3>
+			<p>Don't hesitate to contact us if you have any questions. Via Email: ecxunilag@gmail.com</p>
 		</main>
 	);
-};
+}
 
 export default PrivacyPolicyPage;
