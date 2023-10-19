@@ -1,5 +1,5 @@
 import { Nunito } from "next/font/google";
-import styles from './policy.module.css'
+
 
 const nunito = Nunito({
 	weight: "400",
