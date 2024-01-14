@@ -1,35 +1,47 @@
 .page_head {
   width: 100%;
-  background: #eee url(/banner.png) no-repeat 41% 0;
-  background-size: cover;
+  background: #272E4B;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 182px;
-  padding: 0 min(8.33%, 120px);
-  padding-bottom: 241px;
+  gap: 30px;
+  padding: 0 min(30%, 150px) 230px;
+  color: var(--white-900);
+}
+.main__section {
+  padding: 0 min(30%, 150px);
+  margin: 160px 0;
 }
 
 @media screen and (max-width: 1226px) {
   .page_head {
-    padding: 21px max(24px, 7%) 241px;
+    padding: 21px max(24px, 7%) 230px;
+  }
+  .main__section {
+    padding: 21px max(24px, 7%);
   }
 }
 @media screen and (max-width: 1175px) {
   .page_head {
-    padding: 21px max(24px, 6%) 241px;
+    padding: 21px max(24px, 6%) 230px;
+  }
+  .main__section {
+    padding: 21px max(24px, 6%);
   }
 }
 
 @media screen and (max-width: 980px) {
   .page_head {
     gap: 20px;
-    padding: 21px max(24px, 6%) 241px;
+    padding: 21px max(24px, 6%) 230px;
+  }
+  .main__section {
+    padding: 21px max(24px, 6%);
+    margin: 120px 0;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .page_head {
-    gap: 69.64px;
-    padding-bottom: 129px;
+    gap: 70px;
+    padding-bottom: 0px;
   }
 }

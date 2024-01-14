@@ -9,6 +9,7 @@ import ContactUs from './components/contact';
 import Newsletter from './components/newsletter';
 import Footer from './components/footer';
 import BackToTop from './components/backToTop';
+import Merch from './components/merch';
 
 
 export default function Home() {
@@ -18,16 +19,19 @@ export default function Home() {
         <NavBar />
         <Hero />
       </div>
-      <main>
+      <main className={styles.main}>
+        <Achievements />
+        <Merch />
+        <Newsletter />
+        <Footer /> 
+        {/*
         <AboutECX />
         <WhatWeDo />
-        <Achievements />
         <Team />
         <ContactUs />
-        <Newsletter />
+        */}
       </main>
-      <BackToTop />
-      <Footer />
+      {/* <BackToTop />*/}
     </div>
   )
 }
