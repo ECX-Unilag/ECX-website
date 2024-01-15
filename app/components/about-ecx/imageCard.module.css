@@ -1,0 +1,89 @@
+.image_container{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.image{
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    left: 0px;
+}
+
+.bg{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 396px;
+    height: 481px;
+    flex-shrink: 0; 
+    z-index: 1;
+}
+.bg_dart{
+    background-color: #2699E3;
+}
+.bg_swift{
+    background-color: #FAB12D;
+}
+.bg_ruby{
+    background-color: #F2443F;
+}
+
+.brdr{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 396px;
+    height: 481px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.brdr_dart{
+    border: 2px solid #2699E3;
+}
+.brdr_swift{
+    border: 2px solid #FAB12D;
+}
+.brdr_ruby{
+    border: 2px solid #F2443F;
+}
+
+.text_container{
+    width: 653px;
+}
+.text{
+    color: #545454;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; 
+}
+
+
+@media screen and (max-width: 500px) {
+    .image{
+        width: 198px;
+        height: 240.5px;
+    }
+    .image_container{
+       display: none;
+    }
+    .bg{
+        width: 198px;
+        height: 240.5px;
+    }
+   .brdr{
+    width: 198px;
+    height: 240.5px;
+   }
+   .text_container{
+    width: 324px;
+   }
+   .text{
+    font-size: 14px;
+    line-height: 19.6px;
+   }
+}
