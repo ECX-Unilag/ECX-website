@@ -9,6 +9,8 @@ import ContactUs from './components/contact';
 import Newsletter from './components/newsletter';
 import Footer from './components/footer';
 import BackToTop from './components/backToTop';
+import Community from './components/Community';
+import Testimonials from './components/Testimonials/Testimonials';
 
 
 export default function Home() {
@@ -22,7 +24,11 @@ export default function Home() {
         <AboutECX />
         <WhatWeDo />
         <Achievements />
-        <Team />
+        <div className={styles.team_community_container}>
+          <Team />
+          <Community />
+        </div>
+        <Testimonials />
         <ContactUs />
         <Newsletter />
       </main>

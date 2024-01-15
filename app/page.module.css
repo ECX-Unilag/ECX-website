@@ -10,6 +10,14 @@
   padding-bottom: 241px;
 }
 
+.team_community_container{
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(160.67% 82.93% at 58.09% 38.42%, #2699E3 0%, #2681C0 0.01%, #272E4B 98.66%);
+  color: white;
+  /* display: none; */
+}
+
 @media screen and (max-width: 1226px) {
   .page_head {
     padding: 21px max(24px, 7%) 241px;
