@@ -69,7 +69,10 @@ line-height: 30px;
         height: 240.5px;
     }
     .image_container{
-       display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
     .bg{
         width: 198px;

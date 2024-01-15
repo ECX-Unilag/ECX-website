@@ -1,13 +1,14 @@
 .about {
     display: flex;
-    margin: 50px;
+    margin: 100px;
     width: 1137px;
     gap: 56px;
     justify-content: space-between;
 }
 .about_container{
-    margin: 50px;
+    /* margin: 50px; */
 position: relative;
+margin-bottom: 100px;
 
 }
 .about_2{
@@ -67,17 +68,23 @@ position: relative;
   right: 0;
 }
 .vector2{
-    top: 0;
-    left: 400px;
+    position: absolute;
+    top: 350px;
+    /* left: 400px; */
 }
 
 
 @media screen and (max-width: 500px) {
     .about{
-        gap: 32px;
-        width: 489px;
-        margin: 20px
+        display: grid;
+        gap: 200px;
     }
+
+    .images_section{
+        margin-left: 55px ;
+        margin: 30px;
+    }
+
     .nav_buttons{
         /* width:100px; */
         gap: 40px;
@@ -87,22 +94,66 @@ position: relative;
         font-size: 20px;
         line-height: 22px;
         text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
     .nav_button{
         font-size: 16px;
         line-height: 22.4px;
     }
-    .about2{
+    .about_2{
+        display: flex;
         margin-top:100px;
-    gap: 20px;
-    align-items: column;
+    gap: 24px;
+    align-items: inherit;
     width: 279px;
+    /* justify-content: column; */
+    }
+    
+    .vector2{
+      left: 0;
+      bottom: 0;
+      top: 200px;
+      right: 200px
+    }
+
+    .vector1{
+       right: 100px
     }
 }
+
+
+@media (min-width: 501px) and (max-width: 1000px) {
+    .about{
+        display: grid;
+        gap: 500px;
+    }
+    .about_title{
+        text-align: center
+    }
+    .images_section{
+        margin-left: 155px ;
+        margin-top: 50px;
+    }
+    .about_2{
+        display: flex;
+        margin-top:100px;
+    gap: 24px;
+    align-items: inherit;
+    width: auto;
+    }
+
+    .vector2{
+        left: 0;
+        bottom: 0;
+        top: 200px;
+        right: 200px
+      }
+  
+      .vector1{
+         right: 100px
+      }
+}
+
 /* @media screen and (max-width: 1226px) {
     .about {
         padding: 128px max(24px, 7%);

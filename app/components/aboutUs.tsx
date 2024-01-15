@@ -25,7 +25,7 @@ const AboutECX = () => {
         <div className={aboutStyles.about_container}>
         <div className={aboutStyles.vector1}><Image src={"/about/vector1.svg"} alt={"vector"} width={202} height={202}/></div>
         <div className={aboutStyles.about}>
-        <div>
+        <div className={aboutStyles.images_section}>
             {currentAboutSection === "aboutSection1" && <ImageCard color={"dart"} alt={"who-we-are"} image={"/about/aboutImg1.jpg"}/>}
             {currentAboutSection === "aboutSection2" && <ImageCard color={"swift"} alt={"mission"} image={"/about/aboutImg2.jpg"}/>}
             {currentAboutSection === "aboutSection3" && <ImageCard color={"ruby"} alt={"vision"} image={"/about/aboutImg3.jpg"}/>}
