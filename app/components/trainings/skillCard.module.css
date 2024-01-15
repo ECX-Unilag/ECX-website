@@ -44,3 +44,22 @@ line-height: 22px;
 /* z-index: 3; */
 /* opacity: 0.8 */
 }
+
+
+@media screen and (max-width: 500px) {
+    .image_container{
+        width: 154px;
+        height: 128px;
+        border-radius: 11px;
+    }
+    .backdrop{
+        top: 95px;
+        height: 38px;
+        padding: 0 11px;
+    }
+    .text{
+        font-size: 10px;
+        width: 131.279px;
+        line-height: 14px;
+    }
+}

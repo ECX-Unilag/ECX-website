@@ -1,3 +1,13 @@
+.training_container{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.training_whole{
+    position: relative;
+}
+
 
 .training_title{
  color: var(--black-900);
@@ -7,7 +17,6 @@ font-size: 32px;
 font-style: normal;
 font-weight: 400;
 line-height: 35px;
-/* margin-top: 100px; */
 margin: 40px;
 }
 
@@ -51,9 +60,46 @@ background: #2699E3;
     display: flex;
     flex-flow: wrap;
     align-items: center;
-    gap: 56px calc((20 / 1440) * 100%);
+    gap: 20px calc((20 / 1440) * 100%);
     width: 100%;
-    margin:30px;
 }
-.skills_arrangement{
+
+.vector3{
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+.button_container{
+    padding: 6px 33px 6px 8px;
+    gap: 32px;
+    width: 60%;
+    border-radius: 6px;
+}
+.training_title{
+    font-size: 20px;
+    line-height: 22px;
+}
+.nav_button{
+    font-size: 12px;
+    line-height: 20px;
+}
+.button{
+    border-radius: 6px;
+    padding: 6px 22px;
+    height: 32px;
+}
+
+.skills_container{
+    display: inline flex;
+    flex-flow: wrap;
+    align-items: center;
+    gap: 30px calc((10/600) * 100);
+    width: 100%;
+}
+
 }

@@ -1,5 +1,6 @@
 "use client"
 import React, {useState} from "react"
+import Image from "next/image"
 import SkillCard from "./trainings/skillCard"
 import styles from "./css/trainingskill.module.css"
 import Trainings from "./trainings/trainings.json"
@@ -13,7 +14,9 @@ const TrainingSkills = () => {
         setCurrentSkillSection(skillSection)
     }
     return(
-        <div>
+        <div className={styles.training_whole}>
+            <div className={styles.vector3}><Image src={"/about/vector3.svg"} alt={"vector3"} width={202} height={202} /></div>
+        <div className={styles.training_container}>
             <div>
                 <h2 className={styles.training_title}>Training Tracks</h2>
             </div>
@@ -39,6 +42,7 @@ const TrainingSkills = () => {
             </div>
             }
             </div>
+        </div>
         </div>
     )
 }

@@ -10,6 +10,7 @@ import Newsletter from './components/newsletter';
 import Footer from './components/footer';
 import BackToTop from './components/backToTop';
 import TrainingSkills from './components/trainingskills';
+import MovingRibbon from "./components/movingribbon"
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <AboutECX />
         {/* <WhatWeDo /> */}
         <TrainingSkills/>
+        <MovingRibbon/>
         <Achievements />
         <Team />
         <ContactUs />
