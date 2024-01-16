@@ -16,24 +16,24 @@ import Testimonials from './components/Testimonials/Testimonials';
 export default function Home() {
   return (
     <div className={styles.page}>
-      <div id="head" className={styles.page_head}>
+      {/* <div id="head" className={styles.page_head}>
         <NavBar />
         <Hero />
-      </div>
+      </div> */}
       <main>
-        <AboutECX />
+        {/* <AboutECX />
         <WhatWeDo />
-        <Achievements />
+        <Achievements /> */}
         <div className={styles.team_community_container}>
           <Team />
-          <Community />
+          {/* <Community /> */}
         </div>
-        <Testimonials />
+        {/* <Testimonials />
         <ContactUs />
-        <Newsletter />
+        <Newsletter /> */}
       </main>
-      <BackToTop />
-      <Footer />
+      {/* <BackToTop />
+      <Footer /> */}
     </div>
   )
 }
