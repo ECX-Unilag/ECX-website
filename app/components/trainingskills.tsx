@@ -15,7 +15,7 @@ const TrainingSkills = () => {
     }
     return(
         <div className={styles.training_whole}>
-            <div className={styles.vector3}><Image src={"/about/vector3.svg"} alt={"vector3"} width={202} height={202} /></div>
+            {/* <div className={styles.vector3}><Image src={"/about/vector3.svg"} alt={"vector3"} width={202} height={202} /></div> */}
         <div className={styles.training_container}>
             <div>
                 <h2 className={styles.training_title}>Training Tracks</h2>
