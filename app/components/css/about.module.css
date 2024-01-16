@@ -1,6 +1,6 @@
 .about {
     position: relative;
-    padding: 60px 24px;
+    padding: 80px 50px;
     display: grid;
     grid-template-columns: repeat(10, minmax(0, 1fr));
     justify-content: space-between;
@@ -31,6 +31,7 @@
     line-height: 200%;
     border-bottom: 3px solid transparent;
     color: var(--black-900);
+    white-space: nowrap;
 }
 .who-we-are :nth-child(1) {
     color: var(--ecx-colours-dart);
@@ -64,11 +65,11 @@
 
 .about_vector_ruby {
     top: -5px;
-    right: 100px;
+    right: 50px;
 }
 .about_vector_dart {
-    top: 620px;
-    left: 0;
+    top: 450px;
+    left: -5px;
 }
 
 
@@ -113,6 +114,11 @@
 @media screen and (max-width: 768px) {
     .about_title {
         font-size: 1.25rem;
+        gap: 10px;
+    }
+    .about_nav{
+        display: flex;
+        gap: 20px;
     }
     .about_nav > button {
         font-size: 1rem;
