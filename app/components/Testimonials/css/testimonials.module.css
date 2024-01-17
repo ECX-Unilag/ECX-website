@@ -70,9 +70,8 @@
   background-color: #272E4B;
   color: var(--white-900)
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .section{
-    padding: 0px max(24px, 6%) 0px;
     margin-top: 5rem;
   }
   .section_header{

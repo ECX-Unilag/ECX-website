@@ -34,6 +34,7 @@ export default function Home() {
                 <Team />
                 <Community />
             </div>
+            
             <Testimonials />
                 
             <section className={styles.page_section}>
