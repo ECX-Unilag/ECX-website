@@ -34,7 +34,7 @@ export default function Home() {
                 <Team />
                 <Community />
             </div>
-            
+
             <Testimonials />
                 
             <section className={styles.page_section}>
@@ -42,7 +42,7 @@ export default function Home() {
                 <Newsletter />
             </section>
 
-            <footer className={styles.footer}>
+            <footer id='footer' className={styles.footer}>
                 <Footer /> 
             </footer>
         </div>

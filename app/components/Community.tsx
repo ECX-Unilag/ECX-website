@@ -6,7 +6,7 @@ const Community = () => {
     <section className={styles.container}>
       <h2 className={styles.header}>Community</h2>
       <div className={styles.boxes_container}>
-        <div className={`${styles.boxLayout} ${styles.boxBG_sponsor}`}>
+        <div id='sponsorship' className={`${styles.boxLayout} ${styles.boxBG_sponsor}`}>
           <h3>Sponsorship</h3>
           <p>Lorem ipsum dolor sit amet consectetur. Morbi quis molestie mattis mattis ultrices ipsum. Lobortis euismod ultrices porta vitae risu</p>
           <button className={`${styles.BtnLayout} ${styles.BtnBlue}`}>Sponsor</button>

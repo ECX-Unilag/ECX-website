@@ -58,7 +58,7 @@ const NavBar = () => {
             <Link href="https://ecxunilag.medium.com/" target="_blank">Blogs</Link>
           </li>
           <li>
-            <Link href="#contact">Contact Us</Link>
+            <Link href="#footer">Contact Us</Link>
           </li>
           <li>
             <Link href="https://paystack.shop/ecx-merch-store" target="_blank">Shop</Link>

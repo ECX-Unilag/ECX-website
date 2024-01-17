@@ -15,7 +15,7 @@ const AboutECX = () => {
   }
 
   return (
-    <div className={aboutStyles.about}>
+    <div id="about" className={aboutStyles.about}>
       <ImageCard color={
         currentAboutSection === "who-we-are" ? "dart" :
         currentAboutSection === "mission" ? "swift" : "ruby"
