@@ -19,18 +19,22 @@ export default function Home() {
         <NavBar />
         <Hero />
       </div>
+
+      <Achievements />
+
       <main className={styles.main}>
-        <Achievements />
         <Merch />
         <Newsletter />
-        <Footer /> 
         {/*
         <AboutECX />
         <WhatWeDo />
         <Team />
         <ContactUs />
-        */}
+      */}
       </main>
+      <footer className={styles.footer}>
+        <Footer /> 
+      </footer>
       {/* <BackToTop />*/}
     </div>
   )

@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter, Poppins, Varela_Round } from 'next/font/google'
+import { Inter, Varela_Round } from 'next/font/google'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -16,14 +16,6 @@ const valeraRound = Varela_Round({
   adjustFontFallback: false,
   variable: '--font-varela-round'
 });
-const poppins = Poppins({
-  weight: ["400", "600"],
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
-  adjustFontFallback: false,
-  variable: '--font-poppins'
-});
 
 export const metadata: Metadata = {
   title: 'ECX website',
@@ -37,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${valeraRound.variable} ${poppins.variable}`}>
+      <body className={`${inter.variable} ${valeraRound.variable}`}>
         {children}
       </body>
     </html>

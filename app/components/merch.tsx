@@ -13,8 +13,9 @@ const Merch = () => {
                         src='/merch/tote.png'
                         alt='tote'
                         fill
-                        sizes="(min-width: 808px) 50vw, 100vw"
+                        sizes="(min-width: 768px) 30vw, 30vw"
                         objectFit='cover'
+                        objectPosition='center'
                     />
                 </li>
                 <li className={MerchStyles.merch__item}>
@@ -22,8 +23,9 @@ const Merch = () => {
                         src='/merch/tee.png'
                         alt='tote'
                         fill
-                        sizes="(min-width: 808px) 50vw, 100vw"
+                        sizes="(min-width: 768px) 30vw, 30vw"
                         objectFit='cover'
+                        objectPosition='center'
                     />
                 </li>
                 <li className={MerchStyles.merch__item}>
@@ -31,8 +33,9 @@ const Merch = () => {
                         src='/merch/bottle.png'
                         alt='tote'
                         fill
-                        sizes="(min-width: 808px) 50vw, 100vw"
+                        sizes="(min-width: 768px) 30vw, 30vw"
                         objectFit='cover'
+                        objectPosition='center'
                     />
                 </li>
             </ul>

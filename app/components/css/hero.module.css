@@ -17,6 +17,14 @@
     font-size: 2.5rem;
     font-family: var(--font-varela-round);
     line-height: 110%;
+    position: relative;
+}
+.hero__title::after {
+    content: url(/hero-vector.svg);
+    position: absolute;
+    width: 26px;
+    height: 25px;
+    transform: translateX(-15px) translateY(-15px);
 }
 .hero__paragraph {
     padding-bottom: 8px;
@@ -85,21 +93,24 @@
     }
 }
 @media screen and (max-width: 768px) {
-    .hero {
-        padding-bottom: 100px;
-    }
     .hero_text_ctn {
         gap: 24px;
     }
     .hero__title {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 125%;
+    }
+    .hero__title::after {
+        width: 23px;
+        height: 20px;
+        transform: translateX(-8px) translateY(-15px);
     }
     .hero__paragraph {
-      font-size: 0.875rem;
+        font-size: 0.875rem;
     }
     .hero__cta {
-      font-size: 1rem;
-      padding: 0.75rem 1.75rem;
+        font-size: 1rem;
+        padding: 0.75rem 1.75rem;
     }
     .hero__img_ctn {
         width: 17rem;
