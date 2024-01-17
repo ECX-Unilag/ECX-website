@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import MemberRowStyles from './css/memberRow.module.css';
 import MemberCard from './memberCard';
 
@@ -9,8 +9,10 @@ interface props {
 }
 
 const MembersRow = ({ members, index }: props) => {
-  const [rowMembersData, setRowMembersData] = useState(
-    members.map((member:object, memberIndex:number) => ({
+  const [rowMembersData, setRowMembersData] = useState(members)
+
+  useEffect(() => {
+    const updatedRowMembersData = members.map((member:object, memberIndex:number) => ({
       ...member,
       memberIndex: memberIndex,
       expand: (index % 2 === 0) && (memberIndex === 0)
@@ -18,8 +20,8 @@ const MembersRow = ({ members, index }: props) => {
         : (index % 2 === 1) && (memberIndex === (members.length - 1))
           ? true : false
     }))
-  )
-
+    setRowMembersData(updatedRowMembersData)
+  }, [members])
   const updateRow = (index: string) => {
     const updatedData = rowMembersData.map((member:any) =>
       member.memberIndex === index ? { ...member, expand: true } : { ...member, expand: false }

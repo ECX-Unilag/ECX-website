@@ -29,7 +29,6 @@ const Team = () => {
 
     return () => window.removeEventListener('resize', handleResize);
   }, [])
-
   return (
     <section id="team" className={TeamStyles.team}>
       <div className={TeamStyles.header}>
