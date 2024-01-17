@@ -1,88 +1,52 @@
-.member_card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 280px;
+.member_card{
+   position: relative;
     width: 100%;
-    padding: 24px 10px;
-    border-radius: 8px;
-    background: var(--bg-white);
-    box-shadow: 0px 12px 27px 0px rgba(0, 0, 0, 0.10), 0px 48px 48px 0px rgba(0, 0, 0, 0.09);
+    min-width: 100%;
+    min-height: 100%;
+    background-color: red;
+    aspect-ratio: 1/1;
+    border-radius: 1.5rem; 
 }
-.member_card h3 {
-    height: 35px;
-    text-align: center;
-    color: #26267E;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 120%;
-    text-transform: uppercase;
-}
-.image_container {
+.member_image{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 66px;
-}
-.image {
-    position: relative;
-    max-width: 230px;
-    height: 172px;
-    object-fit: contain;
-}
-.image img {
-    width: auto;
-    max-height: 172px;
     height: 100%;
+    object-fit: fill;
+    border-radius: 1.5rem;
 }
-.sn {
+.member_container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2.38rem;
+}
+.expand{
+    grid-column: 1 / span 2;
+}
+.member_content{
     position: absolute;
-    top: 0;
+    width: 100%;
+    bottom: 0;
     left: 0;
-    max-width: 79px;
-    width: 35%;
-    height: 222px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    opacity: .8;
-    color: var(--white-900);
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: -0.48px;
-    mix-blend-mode: multiply;
+    background-image: url('../../../../public/memberContentBg.svg');
+    backdrop-filter: blur(50px);
+    /* transform: rotate(-90deg); */
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    padding: 1.34rem 0;
+    padding-left: 1.5rem;
 }
-.sn.blue {
-    background: #3e84f8;
+.member_content h3 {
+    font-size: 1.25rem;
+    font-family: var(--font-varela-round);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem;
 }
-.sn.yellow {
-    background: #FFCF4C;
+.member_content h4{
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem;
 }
-.sn.red {
-    background: #ed4239;
-}
-.lead_name {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: var(--greys-005);
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 1.6px;
-}
-.center {
-    align-items: center;
-}
-.lead_name h4 {
-    font-weight: 700;
-}
-.lead_name h5 {
-    font-weight: 500;
-}
-
-
 @media screen and (max-width: 500px) {
     .member_card {
         max-width: 155px;

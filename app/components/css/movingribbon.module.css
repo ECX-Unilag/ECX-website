@@ -2,6 +2,7 @@
     background-color: var(--ecx-colours-ruby);
     color: var(--white-900);
     padding: 12px 0;
+    margin-bottom: 80px;
   }
   
 .ribbon_item {
@@ -19,6 +20,7 @@
 @media screen and (max-width: 768px) {
   .ribbon {
     padding: 8px 0;
+    margin-bottom: 50px;
   }
   .ribbon_item {
     font-size: 0.875rem;

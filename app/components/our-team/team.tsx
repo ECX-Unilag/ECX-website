@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import TeamStyles from './css/team.module.css';
+import styles from './css/member.module.css'
 import MemberObj from './member.json';
 import MemberCard from './member';
 
@@ -12,27 +13,21 @@ const Team = () => {
         <section id="team" className={TeamStyles.team}>
             <div className={TeamStyles.header}>
                 <h2>Meet our Team</h2>
-                <p>Here are our Change Makers in this edition.</p>
+                <p>Meet the brains behind the operations of ECX</p>
             </div>
-            <div className={TeamStyles.members}>
-                <div className={TeamStyles.is_chair}>
-                    {members.map((member) => {
-                        if(member.isChair) return <MemberCard {...member} key={member.serial} />;
-                    })}
-                </div>
-                <div className={TeamStyles.not_chair}>
-                    {members.map((member) => {
-                        if(!member.isChair) return <MemberCard {...member} key={member.serial} />;
-                    })}
-                </div>
+            <div className={styles.member_container}>
+                <MemberCard expand={true} />
+                <MemberCard expand={false} />
+                <MemberCard expand={false} />
+                <MemberCard expand={false} />
             </div>
+            
             <Link 
                 className={TeamStyles.ctaBtn} 
                 href="http://bit.ly/volunteer4ecx" 
                 target="_blank" rel="noopener noreferrer"
             >
                 <span>Volunteer for ECX</span>
-                <Image src="/icons/btn-arrow.png" alt="" width={16} height={8} />
             </Link>
         </section>
     )
