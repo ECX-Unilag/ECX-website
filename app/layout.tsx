@@ -8,14 +8,13 @@ const inter = Inter({
   adjustFontFallback: false,
   variable: '--font-inter'
 })
-const valera_round = Varela_Round({
-  weight: "400",
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
+const varela_round = Varela_Round({ 
+  weight: ['400'],
+  subsets: ['latin'],
+  display: 'swap',
   adjustFontFallback: false,
   variable: '--font-varela-round'
-});
+})
 
 export const metadata: Metadata = {
   title: 'ECX website',
@@ -29,9 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${valera_round.variable}`}>
-        {children}
-      </body>
+      <body className={`${inter.variable} ${varela_round.variable}`}>{children}</body>
     </html>
   )
 }

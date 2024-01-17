@@ -15,9 +15,14 @@ const TrainingSkills = () => {
     }
     return(
         <div className={styles.training_skills}>
-			<div className={styles.vector_ctn}>
-				<Image src={"/about/vector3.svg"} alt={"vector"} fill />
-			</div>
+            <div className={styles.vector_swift}>
+                <Image
+                src={"/about/vector-swift.svg"}
+                alt={"vector"}
+                width={260}
+                height={260}
+                />
+            </div>
 			<h2 className={styles.training_title}>Training Tracks</h2>
 			<nav className={styles.training_nav}>
 				<button

@@ -1,223 +1,128 @@
 .about {
-    display: flex;
-    margin: 100px;
-    width: 1137px;
-    gap: 56px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
     justify-content: space-between;
+    align-items: center;
+    gap: 75px;
 }
-.about_container{
-    /* margin: 50px; */
-position: relative;
-margin-bottom: 100px;
 
-}
-.about_2{
+.about_content_ctn {
+    grid-column: span 6 / span 6;
     display: flex;
-    width: 666px;
-    height: 305px;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 100px;
-    gap: 40px;
-    flex-shrink: 0;
-}
-
-.nav_buttons{
-    display: flex;
-    align-items: flex-start;
-    gap: 109px;
-}
-
-.nav_button{
-    font-family: Varela Round;
-    background: none;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-}
-
-.button_dart{
-    background: none;
-    color: #2699E3;
-    text-decoration: 2px solid underline #2699E3;
-}
-.button_swift{
-    background: none;
-    color: #FAB12D;
-    text-decoration: 2px solid underline #FAB12D;
-}
-.button_ruby{
-    background: none;
-    color: #F2443F;
-    text-decoration: 2px solid underline #F2443F;
+    gap: 30px;
 }
 
 .about_title {
-    color: #212121;
-    font-family: Varela Round;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 35px; 
+    font-size: 2rem;
+    font-family: var(--font-varela-round);
+}
+.about_nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: start;
+}
+.about_nav > button {
+    font-family: var(--font-varela-round);
+    font-size: 1.5rem;
+    background: none;
+    line-height: 200%;
+    border-bottom: 3px solid transparent;
+    color: var(--black-900);
+    white-space: nowrap;
+}
+.who-we-are :nth-child(1) {
+    color: var(--ecx-colours-dart);
+    border-bottom: 3px solid var(--ecx-colours-dart);
+}
+.mission :nth-child(2) {
+    color: var(--ecx-colours-swift);
+    border-bottom: 3px solid var(--ecx-colours-swift);
+}
+.vision :nth-child(3) {
+    color: var(--ecx-colours-ruby);
+    border-bottom: 3px solid var(--ecx-colours-ruby);
+}
+.paragraph {
+    font-size: 1.25rem;
+    height: 150px;
 }
 
-.vector1{
+.about_vector {
     position: absolute;
-  top: 0px;
-  right: 0;
+    width: 240px;
+    height: 240px;
+    z-index: -1;
 }
-.vector2{
-    position: absolute;
-    top: 350px;
-    /* left: 400px; */
+.about_vector img {
+    max-width: 100%;
+    max-height: 100%;
+    object-position: center;
+    object-fit: contain;
 }
 
-
-@media screen and (max-width: 500px) {
-    .about{
-        display: grid;
-        gap: 200px;
-    }
-
-    .images_section{
-        margin-left: 55px ;
-        margin: 30px;
-    }
-
-    .nav_buttons{
-        /* width:100px; */
-        gap: 40px;
-    }
-
-    .about_title{
-        font-size: 20px;
-        line-height: 22px;
-        text-align: center;
-    }
-    
-    .nav_button{
-        font-size: 16px;
-        line-height: 22.4px;
-    }
-    .about_2{
-        display: flex;
-        margin-top:100px;
-    gap: 24px;
-    align-items: inherit;
-    width: 279px;
-    /* justify-content: column; */
-    }
-    
-    .vector2{
-      left: 0;
-      bottom: 0;
-      top: 200px;
-      right: 200px
-    }
-
-    .vector1{
-       right: 100px
-    }
+.about_vector_ruby {
+    top: -160px;
+    right: -30px;
+}
+.about_vector_dart {
+    top: 400px;
+    left: -150px;
 }
 
 
-@media (min-width: 501px) and (max-width: 1000px) {
-    .about{
-        display: grid;
-        gap: 500px;
-    }
-    .about_title{
-        text-align: center
-    }
-    .images_section{
-        margin-left: 155px ;
-        margin-top: 50px;
-    }
-    .about_2{
-        display: flex;
-        margin-top:100px;
-    gap: 24px;
-    align-items: inherit;
-    width: auto;
-    }
 
-    .vector2{
-        left: 0;
-        bottom: 0;
-        top: 200px;
-        right: 200px
-      }
-  
-      .vector1{
-         right: 100px
-      }
-}
-
-/* @media screen and (max-width: 1226px) {
+@media screen and (max-width: 1024px) {
     .about {
-        padding: 128px max(24px, 7%);
-    }
-}
-@media screen and (max-width: 1175px) {
-    .about {
-        padding: 128px max(59px, 6.5%);
-    }
-}
-@media screen and (max-width: 1100px) {
-    .about_cards {
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        gap: 32px 0;
     }
-}
-@media screen and (max-width: 980px) {
-    .about {
-        gap: 20px;
-        padding: 128px max(59px, 6.5%);
-    }
-}
-@media screen and (max-width: 500px) {
-    .about {
-        gap: 20px;
-        padding: 48px max(59px, 6.5%) 50px;
-        gap: 48px;
-    }
-    .about_title {
-        font-size: 24px;
-    }
-    .about_cards {
-        gap: 18px;
-    }
-    .about_card {
-        padding: 24px;
+    .about_content_ctn {
+        align-items: center;
         gap: 24px;
     }
-    .about_card img {
-        max-width: 48px;
+    .about_title {
+        font-size: 1.75rem;
+    }
+    .about_nav {
         width: 100%;
-        height: auto;
+        justify-content: space-between;
     }
-    .about_texts {
-        gap: 12px;
+    .about_nav > button {
+        font-size: 1.25rem;
     }
-    .about_sub_title {
-        font-size: 18px;
-        line-height: 131.25%;
+    .paragraph {
+        font-size: 1.125rem;
     }
-    .about_paragraph {
-        font-size: 12px;
-        align-self: stretch;
+    .about_vector {
+        max-width: 130px;
+        max-height: 130px;
     }
-    .read_more_btn {
-        width: 117px;
-        gap: 6px;
-        padding: 13.5px 16px;
-        font-size: 14px;
-        letter-spacing: -0.21px;
+    .about_vector_ruby {
+        top: -70px;
+        right: -100px;
     }
-    .read_more_btn img {
-        width: 12px;
-        height: auto;
+    .about_vector_dart {
+        top: 180px;
+        left: -80px;
     }
-} */
+}
+
+@media screen and (max-width: 768px) {
+    .about_title {
+        font-size: 1.25rem;
+        gap: 10px;
+    }
+    .about_nav {
+        display: flex;
+        gap: 20px;
+    }
+    .about_nav > button {
+        font-size: 1rem;
+    }
+    .paragraph {
+        font-size: 0.875rem;
+    }
+}

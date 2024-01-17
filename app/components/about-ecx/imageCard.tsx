@@ -1,30 +1,25 @@
-import Image from 'next/image';
-import styles from "./imageCard.module.css"
+import ImageCardtyles from "./imageCard.module.css"
+import { ReactElement } from 'react';
 
 interface aboutImage {
-    image: string;
-    color: string;
-    alt: string
+  color: string;
+  children: ReactElement
 }
 
-const ImageCard = ({ image, color, alt }:aboutImage) => {
-    return (
-        <div className={styles.image_container}>
-            <div><Image src={image} alt={`${alt}`} width={396} height={481} className={styles.image}/>
-            <div className={`${styles.bg} 
-            ${(color === "dart") ? styles.bg_dart : null} 
-            ${(color === "swift") ? styles.bg_swift : null}  
-            ${(color === "ruby") ? styles.bg_ruby : null}
-            `}
-            ></div>
-            <div className={`${styles.brdr}
-            ${(color === "dart") ? styles.brdr_dart : null} 
-            ${(color === "swift") ? styles.brdr_swift : null}  
-            ${(color === "ruby") ? styles.brdr_ruby : null}
-            `}></div>
-            </div>
-        </div>
-    )
+const ImageCard = ({ color, children }: aboutImage) => {
+  return (
+    <div className={ImageCardtyles.image_card}>
+      <div
+        className={`
+          ${ImageCardtyles.image_card_bg} 
+          ${(color === "dart") && ImageCardtyles.image_card_bg_dart} 
+          ${(color === "swift") && ImageCardtyles.image_card_bg_swift}  
+          ${(color === "ruby") && ImageCardtyles.image_card_bg_ruby}
+        `}
+      />
+        {children}
+    </div>
+  )
 }
 
 export default ImageCard;
