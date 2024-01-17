@@ -4,52 +4,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 72px;
-    padding: 128px min(8.33%, 120px);
+    gap: 50px;
+    color: var(--white-900);
 }
 .header {
-    width: 100%;
     display: flex;
-    color: var(--white-900);
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 2.5rem;
 }
 .header h2 {
-    text-align: center;
     font-family: var(--font-varela-round);
     font-size: 2rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 2.1875rem;
 }
 .header p {
-    max-width: 669px;
     width: 100%;
-    text-align: center;
     font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.875rem;
 }
-.members,
-.members > div {
-    width: 100%;
+
+.members_ctn {
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     align-items: center;
-    gap: 56px;
+    gap: 40px;
+    width: 100%;
 }
-.members > div {
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 56px calc((20 / 1440) * 100%);
-}
+
 .ctaBtn {
     max-width: 222px;
     width: 100%;
     padding: 18px 32px;
-    background: #F2443F;
+    background: var(--ecx-colours-ruby);
     color: var(--white-900);
     display: flex;
     justify-content: center;
@@ -62,49 +50,16 @@
     letter-spacing: -0.24px;
 }
 
-@media screen and (max-width: 1226px) {
-    .team {
-      padding: 128px max(24px, 7%);
-    }
+@media screen and (max-width: 1024px) {
+  .team {
+    gap: 32px;
+  }
+  .members_ctn {
+    gap: 20px;
+  }
 }
-@media screen and (max-width: 1175px) {
-    .team {
-      padding: 128px max(24px, 6%);
-    }
-}
-@media screen and (max-width: 980px) {
-    .team {
-      padding: 128px max(24px, 6%);
-    }
-}
-@media screen and (max-width: 500px) {
-    .team {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 32px;
-        padding: 128px min(8.33%, 120px);
-    }
-    .team {
-      padding: 68px max(24px, 6%) 94px;
-    }
-    .header {
-        gap: 12px;
-    }
-    .header h2 {
-        font-size: 27px;
-    }
-    .header p {
-        font-size: 15px;
-    }
-    .members,
-    .members > div {
-        gap: 28px;
-    }
-    .members > div {
-        gap: 28px 12.1px;
-    }
+
+@media screen and (max-width: 768px) {
     .ctaBtn {
         margin-top: 59px;
     }
