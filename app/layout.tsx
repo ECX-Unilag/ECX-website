@@ -8,7 +8,7 @@ const inter = Inter({
   adjustFontFallback: false,
   variable: '--font-inter'
 })
-const valeraRound = Varela_Round({
+const valera_round = Varela_Round({
   weight: "400",
   style: ["normal"],
   subsets: ["latin"],
@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${valeraRound.variable}`}>
+      <body className={`${inter.variable} ${valera_round.variable}`}>
         {children}
       </body>
     </html>

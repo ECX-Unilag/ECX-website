@@ -2,7 +2,7 @@ import styles from './page.module.css'
 import NavBar from './components/navBar'
 import Hero from './components/hero'
 import AboutECX from './components/aboutUs';
-import WhatWeDo from './components/whatWeDo';
+// import WhatWeDo from './components/whatWeDo';
 import Achievements from './components/achievements';
 import Team from './components/our-team/team';
 import ContactUs from './components/contact';
@@ -10,6 +10,8 @@ import Newsletter from './components/newsletter';
 import Footer from './components/footer';
 import BackToTop from './components/backToTop';
 import Merch from './components/merch';
+import TrainingSkills from './components/trainingskills';
+import MovingRibbon from "./components/movingribbon"
 
 
 export default function Home() {
@@ -23,19 +25,20 @@ export default function Home() {
       <Achievements />
 
       <main className={styles.main}>
+        <AboutECX />
+        <TrainingSkills/>
+      </main>
+
+      <MovingRibbon />
+      
+      <main className={styles.main}>
         <Merch />
         <Newsletter />
-        {/*
-        <AboutECX />
-        <WhatWeDo />
-        <Team />
-        <ContactUs />
-      */}
       </main>
+
       <footer className={styles.footer}>
         <Footer /> 
       </footer>
-      {/* <BackToTop />*/}
     </div>
   )
 }

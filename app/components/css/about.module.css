@@ -1,85 +1,160 @@
 .about {
-    background: var(--bg-white);
-    padding: 128px min(8.33%, 120px);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
-}
-.about_title, .about_sub_title {
-    color: #3E3934;
-}
-.about_title {
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-}
-.about_cards {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
+    margin: 100px;
+    width: 1137px;
+    gap: 56px;
     justify-content: space-between;
-    gap: 48px min(24px, 10%);
 }
-.about_card {
-    max-width: 588px;
-    width: 100%;
-    padding: 32px;
+.about_container{
+    /* margin: 50px; */
+position: relative;
+margin-bottom: 100px;
+
+}
+.about_2{
     display: flex;
+    width: 666px;
+    height: 305px;
     flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    border-radius: 8px;
-    background: var(--white-900);
-    box-shadow: 0px 12px 27px 0px rgba(0, 0, 0, 0.10), 0px 48px 48px 0px rgba(0, 0, 0, 0.09), 0px -7px 70px 0px rgba(0, 0, 0, 0.05);
+    align-items: flex-start;
+    margin-top: 100px;
+    gap: 40px;
+    flex-shrink: 0;
 }
-.about_texts {
+
+.nav_buttons{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+    align-items: flex-start;
+    gap: 109px;
 }
-.about_sub_title {
+
+.nav_button{
+    font-family: Varela Round;
+    background: none;
     font-size: 24px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 131.25%;
-}
-.about_paragraph {
-    max-width: 450px;
-    width: 100%;
-    overflow: hidden;
-    color: var(--greys-006);
-    text-align: center;
-    text-overflow: ellipsis;
-    font-size: 16px;
     font-weight: 400;
-    line-height: 160%;
-}
-.read_more_btn {
-    width: 136px;
-    padding: 18px 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border-radius: 8px;
-    color: var(--white-900);
-    font-size: 16px;
-    letter-spacing: -0.24px;
+    line-height: 26px;
 }
 
-.bg_blue {
-    background: var(--ecx-colours-blue);
+.button_dart{
+    background: none;
+    color: #2699E3;
+    text-decoration: 2px solid underline #2699E3;
 }
-.bg_red {
-    background: var(--ecx-colours-dark-red);
+.button_swift{
+    background: none;
+    color: #FAB12D;
+    text-decoration: 2px solid underline #FAB12D;
+}
+.button_ruby{
+    background: none;
+    color: #F2443F;
+    text-decoration: 2px solid underline #F2443F;
+}
+
+.about_title {
+    color: #212121;
+    font-family: Varela Round;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; 
+}
+
+.vector1{
+    position: absolute;
+  top: 0px;
+  right: 0;
+}
+.vector2{
+    position: absolute;
+    top: 350px;
+    /* left: 400px; */
 }
 
 
-@media screen and (max-width: 1226px) {
+@media screen and (max-width: 500px) {
+    .about{
+        display: grid;
+        gap: 200px;
+    }
+
+    .images_section{
+        margin-left: 55px ;
+        margin: 30px;
+    }
+
+    .nav_buttons{
+        /* width:100px; */
+        gap: 40px;
+    }
+
+    .about_title{
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+    }
+    
+    .nav_button{
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+    .about_2{
+        display: flex;
+        margin-top:100px;
+    gap: 24px;
+    align-items: inherit;
+    width: 279px;
+    /* justify-content: column; */
+    }
+    
+    .vector2{
+      left: 0;
+      bottom: 0;
+      top: 200px;
+      right: 200px
+    }
+
+    .vector1{
+       right: 100px
+    }
+}
+
+
+@media (min-width: 501px) and (max-width: 1000px) {
+    .about{
+        display: grid;
+        gap: 500px;
+    }
+    .about_title{
+        text-align: center
+    }
+    .images_section{
+        margin-left: 155px ;
+        margin-top: 50px;
+    }
+    .about_2{
+        display: flex;
+        margin-top:100px;
+    gap: 24px;
+    align-items: inherit;
+    width: auto;
+    }
+
+    .vector2{
+        left: 0;
+        bottom: 0;
+        top: 200px;
+        right: 200px
+      }
+  
+      .vector1{
+         right: 100px
+      }
+}
+
+/* @media screen and (max-width: 1226px) {
     .about {
         padding: 128px max(24px, 7%);
     }
@@ -145,4 +220,4 @@
         width: 12px;
         height: auto;
     }
-}
+} */
