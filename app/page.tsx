@@ -9,8 +9,8 @@ import Footer from './components/footer';
 import Merch from './components/merch';
 import TrainingSkills from './components/trainingskills';
 import MovingRibbon from "./components/movingribbon"
-import Community from './components/community';
 import Testimonials from './components/Testimonials/Testimonials';
+import Community from './components/Community';
 
 
 export default function Home() {
