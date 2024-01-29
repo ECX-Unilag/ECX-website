@@ -75,7 +75,7 @@ const Footer = () => {
                 alt='phone'
               />
               <span>
-                + 234 xxx xxxx xxx
+                + 234 812 773 4387
               </span>
             </Link>
           </li>

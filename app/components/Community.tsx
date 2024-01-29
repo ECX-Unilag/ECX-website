@@ -8,17 +8,17 @@ const Community = () => {
       <div className={styles.boxes_container}>
         <div id='sponsorship' className={`${styles.boxLayout} ${styles.boxBG_sponsor}`}>
           <h3>Sponsorship</h3>
-          <p>Lorem ipsum dolor sit amet consectetur. Morbi quis molestie mattis mattis ultrices ipsum. Lobortis euismod ultrices porta vitae risu</p>
+          <p>Your generous support would drive us to excellence, ensuring we deliver nothing but the best. Interested in being a sponsor? Please <a className={styles.contactLink} href='mailto:ecxunilag@gmail.com'>contact us </a>for a detailed proposal.</p>
           <button className={`${styles.BtnLayout} ${styles.BtnBlue}`}>Sponsor</button>
         </div>
         <div className={`${styles.boxLayout} ${styles.boxBG_blog}`}>
           <h3>Blog</h3>
-          <p>Lorem ipsum dolor sit amet consectetur. Morbi quis molestie mattis mattis ultrices ipsum. Lobortis euismod ultrices porta vitae risu</p>
+          <p>At ECX, we're dedicated to sharing easy-to-understand articles about diverse topics written by knowledgeable writers looking for a platform to share their experiences.</p>
           <button className={`${styles.BtnLayout} ${styles.BtnRed}`}>Read Now</button>
         </div>
         <div className={`${styles.boxLayout} ${styles.boxBG_sponsor} ${styles.box_center}`}>
           <h3>Chat series</h3>
-          <p>Lorem ipsum dolor sit amet consectetur. Morbi quis molestie mattis mattis ultrices ipsum. Lobortis euismod ultrices porta vitae risu</p>
+          <p>In our Chat Series, we will cover diverse and uncommon topics. Join us as we delve into these topics with speakers who will provide their unique perspectives.</p>
           <button className={`${styles.BtnLayout} ${styles.BtnBlue}`}>Begin</button>
         </div>
       </div>

@@ -12,7 +12,7 @@ const Newsletter = () => {
                       Sign up to our newsletter
                   </h2>
                   <p className={NewsletterStyles.paragraph}>
-                      Lorem Ipsum is simply dummy  gfmdmp kd bodf
+                    Get unique stories, exclusive updates and special offers from ECX
                   </p>
                   <Link href="https://substack.com/@engcareerexpo" target='_blank'>
                       <button className={NewsletterStyles.newsletter__button}>

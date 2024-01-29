@@ -7,10 +7,10 @@ const Hero = () => {
         <section className={HeroStyles.hero}>
             <div className={HeroStyles.hero_text_ctn}>
                 <h1 className={HeroStyles.hero__title}>
-                    Empowering the next generation of leaders
+                    Transforming Students to Industry-Ready Professionals 
                 </h1>
                 <p className={HeroStyles.hero__paragraph}>
-                    Engineering career expo (ECX) is a student led platform created to learn, train and mentor undergraduates in relevant technical and soft-skills
+                    Engineering Career Expo is a student-led platform dedicated to training and mentoring undergraduates in relevant technical and soft skills
                 </p>
                 <Link href="http://bit.ly/volunteer4ecx" target="_blank" className={HeroStyles.hero__cta}>
                     Join the community

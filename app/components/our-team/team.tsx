@@ -33,7 +33,8 @@ const Team = () => {
     <section id="team" className={TeamStyles.team}>
       <div className={TeamStyles.header}>
         <h2>Meet our Team</h2>
-        <p>Meet the brains behind the operations of ECX</p>
+        <p>Here are the dedicated individuals behind the Engineering Career Expo (ECX), each bringing a unique set of skills and expertise to empower students on their journey from academia to the professional world.Get to know the minds shaping ECX:
+       </p>
       </div>
       <div className={TeamStyles.members_ctn}>
         {
