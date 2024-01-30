@@ -24,6 +24,10 @@
     font-size: 1.25rem;
     line-height: 1.875rem;
 }
+.lineBreak {
+    display: block;
+    margin: 10px 0;
+}
 
 .members_ctn {
     display: flex;
@@ -57,10 +61,20 @@
   .members_ctn {
     gap: 20px;
   }
+  .header p {
+      width: 100%;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
     .ctaBtn {
         margin-top: 59px;
+    }
+    .header p {
+        width: 100%;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
     }
 }

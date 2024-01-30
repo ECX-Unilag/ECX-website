@@ -55,16 +55,21 @@ const AboutECX = () => {
           </button>
         </nav>
         <p className={aboutStyles.paragraph}>
-          {currentAboutSection === "who-we-are" && 
-            "ECX is a dynamic student-led team of dedicated individuals who are committed to making a positive impact by providing students with the skills needed to excel in their careers. We offer a range of training programs tailored to different skill levels and interests, from soft-skills coaching to virtual and physical training on various technical skills, while providing a supportive and interactive learning environment."
-          }
-          {currentAboutSection === "mission" && 
-            "Our mission at the Engineering Career Expo (ECX) is to empower and equip students with the necessary resources and guidance needed to enhance their technical expertise and cultivate soft skills to excel in their transition into the industry. We're proud to have made a positive impact on countless students over the last four years and are committed to continuing our mission of empowering others through education"
-          }
-          {currentAboutSection === "vision" && 
-            `At ECX, we envision a future where every student embraces a seamless transition from academia to industry—with empowered technical knowledge, mentorship, and opportunities. 
-            Our vision is to foster an ecosystem that not only bridges the gap between education and the professional realm but also fosters a culture of innovation, diversity, and continuous learning`
-          }
+          {currentAboutSection === "who-we-are" && <>
+            ECX is a dynamic student-led team of dedicated individuals who are committed to making a positive impact by providing students with the skills needed to excel in their careers. 
+            <span className={aboutStyles.lineBreak} />
+            We offer a range of training programs tailored to different skill levels and interests, from soft-skills coaching to virtual and physical training on various technical skills, while providing a supportive and interactive learning environment.
+          </>}
+          {currentAboutSection === "mission" && <>
+            Our mission at the Engineering Career Expo (ECX) is to empower and equip students with the necessary resources and guidance needed to enhance their technical expertise and cultivate soft skills to excel in their transition into the industry.
+            <span className={aboutStyles.lineBreak} />
+            We're proud to have made a positive impact on countless students over the last four years and are committed to continuing our mission of empowering others through education
+          </>}
+          {currentAboutSection === "vision" && <>
+            At ECX, we envision a future where every student embraces a seamless transition from academia to industry—with empowered technical knowledge, mentorship, and opportunities.
+            <span className={aboutStyles.lineBreak} />
+            Our vision is to foster an ecosystem that not only bridges the gap between education and the professional realm but also fosters a culture of innovation, diversity, and continuous learning
+          </>}
         </p>
       </div>
 

@@ -55,7 +55,7 @@ const NavBar = () => {
             <Link href="#sponsorship">Sponsorship</Link>
           </li>
           <li>
-            <Link href="https://ecxunilag.medium.com/" target="_blank">Blogs</Link>
+            <Link href="https://medium.com/@engcareerexpo/" target="_blank">Blogs</Link>
           </li>
           <li>
             <Link href="#footer">Contact Us</Link>
