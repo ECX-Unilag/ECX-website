@@ -2,84 +2,84 @@
     {
         "serial": 1,
         "team": "",
-        "image": "/our-team/ifihan-oluseye.png",
+        "image": "/our-team/ifihan-oluseye.jpg",
         "fullName": "Ifihan Olusheye",
         "title": "Chairperson"
     },
     {
         "serial": 2,
         "team": "",
-        "image": "/our-team/alabo-edwin.png",
+        "image": "/our-team/alabo-edwin.jpg",
         "fullName": "Alabo Edwin",
         "title": "Deputy Chairperson"
     },
     {
         "serial": 3,
         "team": "",
-        "image": "/our-team/olayinka-atobiloye.png",
+        "image": "/our-team/olayinka-atobiloye.jpg",
         "fullName": "Olayinka Atobiloye",
         "title": "Deputy Chairperson"
     },
     {
       "serial": 4,
       "team": "Development",
-      "image": "/our-team/david-dada.png",
+      "image": "/our-team/david-dada.jpg",
       "fullName": "David Dada",
       "title": "Team Lead"
     },
     {
         "serial": 5,
         "team": "Quality Management",
-        "image": "/our-team/chiemezie-jacob.png",
+        "image": "/our-team/chiemezie-jacob.jpg",
         "fullName": "Chiemezie Jacob",
         "title": "Team Lead"
     },
     {
         "serial": 6,
         "team": "Training",
-        "image": "/our-team/ayodeji-abatan.png",
+        "image": "/our-team/ayodeji-abatan.jpg",
         "fullName": "Ayodeji Abatan",
         "title": "Team Lead"
     },
     {
       "serial": 7,
       "team": "Welfare",
-      "image": "/our-team/oluwatomi-olagunju.png",
+      "image": "/our-team/oluwatomi-olagunju.jpg",
       "fullName": "Oluwatomi Olagunju",
       "title": "Team Lead"
     },
     {
         "serial": 8,
         "team": "Logistics",
-        "image": "/our-team/adeboye-samuel.png",
+        "image": "/our-team/adeboye-samuel.jpg",
         "fullName": "Adeboye Samuel",
         "title": "Team Lead"
     },
     {
         "serial": 9,
         "team": "Sponsorships & Partnerships",
-        "image": "/our-team/toluwanimi-atunbi.png",
+        "image": "/our-team/toluwanimi-atunbi.jpg",
         "fullName": "Toluwanimi Atunbi",
         "title": "Team Lead"
     },
     {
         "serial": 10,
         "team": "Content",
-        "image": "/our-team/hassanat-busari.png",
+        "image": "/our-team/hassanat-busari.jpg",
         "fullName": "Hassanat Busari",
         "title": "Team Lead"
     },
     {
         "serial": 11,
         "team": "Design",
-        "image": "/our-team/zainab-idris.png",
+        "image": "/our-team/zainab-idris.jpg",
         "fullName": "Zainab Idris",
         "title": "Team Lead"
     },
     {
         "serial": 12,
         "team": "Social Media & Publicity",
-        "image": "/our-team/oluwatobi-oloyede.png",
+        "image": "/our-team/oluwatobi-oloyede.jpg",
         "fullName": "Oluwatobi Oloyede",
         "title": "Team Lead"
     }

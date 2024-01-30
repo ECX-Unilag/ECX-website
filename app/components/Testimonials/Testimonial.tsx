@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './css/testimonials.module.css'
+import Image from 'next/image'
 
 interface props {
   Bg: string
@@ -9,8 +10,14 @@ const Testimonial = ({Bg}:props) => {
   return (
     <div className={`${Bg} ${styles.BoxLayout}`}>
       <div className={styles.Box_UpperContentLayout}>
-        <div>
-          <img src='/our-team/ifihan-oluseye.png' alt='photo' className={styles.Box_Img}/>
+        <div className={styles.Box_Img_Ctn}>
+          <Image
+            src='/our-team/ifihan-oluseye.jpg'
+            alt='img'
+            objectFit='cover'
+            objectPosition='center'
+            fill
+          />
         </div>
         <div>
           <h3 className={styles.Box_Name}>Azeem Lanre</h3>

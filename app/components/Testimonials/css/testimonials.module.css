@@ -56,11 +56,12 @@
   font-weight: 400;
   line-height: 1.625rem;
 }
-.Box_Img{
+.Box_Img_Ctn{
   width: 4.5rem;
   height: 4.5rem;
-  object-fit: fill;
-  border-radius: 6.25rem;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
 }
 .odd{
   background-color: #F4E1CE;
@@ -104,7 +105,7 @@
     font-size: 0.875rem;
     line-height: 1.225rem;
   }
-  .Box_Img{
+  .Box_Img_Ctn{
     width: 2.04144rem;
     height: 2.04144rem;
     border-radius: 2.83531rem;
