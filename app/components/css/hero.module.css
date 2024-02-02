@@ -39,13 +39,6 @@
     font-family: var(--font-varela-round);
     font-size: 1.25rem;
     padding: 15px 25px;
-    transition: filter 0.2s;
-}
-.hero__cta:hover {
-    filter: brightness(1.1);
-}
-.hero__cta:active {
-    filter: brightness(0.95);
 }
 .hero__img_ctn {
     width: 410px;

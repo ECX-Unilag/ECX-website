@@ -10,23 +10,23 @@ const Community = () => {
         <div id='sponsorship' className={`${styles.boxLayout} ${styles.boxBG_sponsor}`}>
           <h3>Sponsorship</h3>
           <p>Your generous support would drive us to excellence, ensuring we deliver nothing but the best. Interested in being a sponsor?</p>
-          <Link href="" className={`${styles.BtnLayout} ${styles.BtnBlue}`}>
+          <button className={`${styles.BtnLayout} ${styles.BtnBlue}`}>
             Sponsor
-          </Link>
+          </button>
         </div>
         <div className={`${styles.boxLayout} ${styles.boxBG_blog}`}>
           <h3>Blog</h3>
           <p>At ECX, we're dedicated to sharing easy-to-understand articles about diverse topics written by knowledgeable writers looking for a platform to share their experiences.</p>
-          <Link href="https://medium.com/@engcareerexpo/" target="_blank" className={`${styles.BtnLayout} ${styles.BtnRed}`}>
+          <Link href="https://medium.com/@engcareerexpo/" target="_blank" className={`button ${styles.BtnLayout} ${styles.BtnRed}`}>
             Read Now
           </Link>
         </div>
         <div className={`${styles.boxLayout} ${styles.boxBG_sponsor} ${styles.box_center}`}>
           <h3>Chat series</h3>
           <p>In our Chat Series, we will cover diverse and uncommon topics. Join us as we delve into these topics with speakers who will provide their unique perspectives.</p>
-          <Link href="#" className={`${styles.BtnLayout} ${styles.BtnBlue}`}>
+          <button className={`${styles.BtnLayout} ${styles.BtnBlue}`}>
             Begin
-          </Link>
+          </button>
         </div>
       </div>
     </section>

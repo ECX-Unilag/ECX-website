@@ -12,7 +12,7 @@ const Hero = () => {
                 <p className={HeroStyles.hero__paragraph}>
                     Engineering Career Expo is a student-led platform dedicated to training and mentoring undergraduates in relevant technical and soft skills
                 </p>
-                <Link href="http://bit.ly/volunteer4ecx" target="_blank" className={HeroStyles.hero__cta}>
+                <Link href="http://bit.ly/volunteer4ecx" target="_blank" className={`button ${HeroStyles.hero__cta}`}>
                     Join the community
                 </Link>
             </div>

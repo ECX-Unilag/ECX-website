@@ -48,16 +48,9 @@
     color: var(--white-900);
     font-size: 1.25rem;
     font-family: var(--font-varela-round);
-    transition: filter 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.nav_cta:hover {
-    filter: brightness(1.1);
-}
-.nav_cta:active {
-    filter: brightness(0.95);
 }
 
 @media screen and (max-width: 1280px) {

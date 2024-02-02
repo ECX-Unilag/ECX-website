@@ -25,17 +25,18 @@ const TrainingSkills = () => {
             </div>
 			<h2 className={styles.training_title}>Training Tracks</h2>
 			<nav className={styles.training_nav}>
+        <div className={`${styles.training_nav_bg} ${(currentSkillSection === "soft_skills") && styles.training_nav_bg_soft}`} />
 				<button
-					className={`${styles.training_nav_btn} ${(currentSkillSection === "tech_skills") && styles.btn_active}`}
+					className={styles.training_nav_btn}
 					onClick={() => handleNavigation("tech_skills")}
 				>
-					Technical Skill
+					Technical Skills
 				</button>
 				<button
-					className={`${styles.training_nav_btn} ${(currentSkillSection === "soft_skills") && styles.btn_active}`}
+					className={styles.training_nav_btn}
 					onClick={() => handleNavigation("soft_skills")}
 				>
-					Soft Skill
+					Soft Skills
 				</button>
 			</nav>
 			<div className={styles.skills_ctn}>

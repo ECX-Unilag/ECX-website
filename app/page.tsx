@@ -25,7 +25,7 @@ export default function Home() {
 
             <section className={styles.page_section}>
                 <AboutECX />
-                <TrainingSkills/>
+                <TrainingSkills />
             </section>
 
             <MovingRibbon />

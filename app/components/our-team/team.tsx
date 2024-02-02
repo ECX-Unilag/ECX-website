@@ -47,7 +47,7 @@ const Team = () => {
       </div>
 
       <Link
-        className={TeamStyles.ctaBtn}
+        className={`button ${TeamStyles.ctaBtn}`}
         href="http://bit.ly/volunteer4ecx"
         target="_blank" rel="noopener noreferrer"
       >

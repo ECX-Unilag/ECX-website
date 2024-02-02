@@ -4,6 +4,7 @@ import styles from '../page.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 const Footer = () => {
   const [formState, setFormState] = useState({
@@ -13,13 +14,17 @@ const Footer = () => {
   })
 
   const {fullName, email, message} = formState
-
+  const router = useRouter()
 
   const handleChange = (event: any) => {
     const {name, value} = event.target
     setFormState(prev => ({ ...prev, [name]: value }))
-    
-    console.log(formState)
+  }
+
+  const handleSubmit = (event: any) => {
+    event.preventDefault()
+    setFormState({ fullName: "", email: "", message: "" })
+    router.push('/')
   }
 
   return (
@@ -141,7 +146,7 @@ const Footer = () => {
 
       <div className={FooterStyles.footer__form_ctn}>
         <h2>Contact Us</h2>
-        <form className={FooterStyles.footer__form}>
+        <form onSubmit={handleSubmit} className={FooterStyles.footer__form}>
           <input
             type='text'
             name='fullName'

@@ -33,19 +33,32 @@
     border-radius: 20px;
     background: var(--ecx-colours-second-blue);
     min-width: 45%;
+    position: relative;
+}
+
+.training_nav_bg {
+    position: absolute;
+    user-select: none;
+    left: 16px;
+    top: 10px;
+    background: var(--ecx-colours-dart);
+    border-radius: 12px;
+    width: calc(50% - 18px);
+    height: calc(100% - 20px);
+    transition: left 0.2s linear;
+}
+.training_nav_bg_soft {
+    left: 50%;
 }
 
 .training_nav_btn {
+    z-index: 1;
     color: var(--white-900);
     font-family: var(--font-varela-round);
     font-size: 1.25rem;
     background: none;
     padding: 13px 57px;
-}
-
-.btn_active {
     border-radius: 12px;
-    background: var(--ecx-colours-dart);
 }
 
 .skills_ctn {
@@ -81,7 +94,16 @@
         padding: 10px 30px;
         border-radius: 8px;
     }
-    
+    .training_nav_bg {
+        left: 10px;
+        top: 8px;
+        border-radius: 8px;
+        width: calc(50% - 10px);
+        height: calc(100% - 16px);
+    }
+    .training_nav_bg_soft {
+        left: 50%;
+    }
     .skills_ctn {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 32px;
@@ -104,7 +126,16 @@
         padding: 5px 20px;
         border-radius: 6px;
     }
-
+    .training_nav_bg {
+        left: 8px;
+        top: 5px;
+        border-radius: 6px;
+        width: calc(50% - 8px);
+        height: calc(100% - 10px);
+    }
+    .training_nav_bg_soft {
+        left: 50%;
+    }
     .skills_ctn {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         row-gap: 20px;

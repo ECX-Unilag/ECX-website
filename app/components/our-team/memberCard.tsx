@@ -25,6 +25,7 @@ const MemberCard = ({ expand, fullName, image, team, title, index, handleHover }
           objectFit='cover'
           objectPosition='center'
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className={MemberCardStyles.member_content}>
           <h3>{fullName}</h3>

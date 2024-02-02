@@ -38,20 +38,10 @@
 }
 
 .ctaBtn {
-    max-width: 222px;
-    width: 100%;
     padding: 18px 32px;
     background: var(--ecx-colours-ruby);
-    color: var(--white-900);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
     border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.24px;
+    font-size: 1.25rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -66,6 +56,10 @@
       font-size: 1.125rem;
       line-height: 1.5rem;
   }
+  .ctaBtn {
+      padding: 0.75rem 1.2rem;
+      font-size: 1.125rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -76,5 +70,10 @@
         width: 100%;
         font-size: 0.75rem;
         line-height: 1.25rem;
+    }
+    .ctaBtn {
+        padding: 0.62rem 1rem;
+        font-size: 0.875rem;
+        border-radius: 0.375rem
     }
 }
