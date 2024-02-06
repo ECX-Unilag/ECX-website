@@ -66,7 +66,7 @@ const NavBar = () => {
         </ul>
       </div>
 
-      <Link href="http://bit.ly/volunteer4ecx" target="_blank" className={`button ${navBarStyles.nav_cta}`}>
+      <Link href="https://chat.whatsapp.com/DV6PNoM5RVj1ICW9hdXW6a" target="_blank" className={`button ${navBarStyles.nav_cta}`}>
         Join US
       </Link>
     </nav>
