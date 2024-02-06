@@ -35,7 +35,7 @@ export default function Home() {
                 <Community />
             </div>
 
-            <Testimonials />
+            {/* <Testimonials /> */}
                 
             <section className={styles.page_section}>
                 <Merch />
